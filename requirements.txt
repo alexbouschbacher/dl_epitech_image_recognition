@@ -3,5 +3,4 @@ numpy
 matplotlib
 tensorflow
 pandas
-ray
 python3-tk
