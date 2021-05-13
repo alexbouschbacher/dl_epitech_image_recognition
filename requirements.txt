@@ -3,4 +3,4 @@ numpy
 matplotlib
 tensorflow
 pandas
-python3-tk
+tkinter
