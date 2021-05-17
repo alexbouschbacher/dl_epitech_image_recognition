@@ -35,8 +35,9 @@ st.write("Select a train file")
 train = st.file_uploader("Upload a train csv", type=["csv"])
 st.write("Select a test file")
 test = st.file_uploader("Upload a test csv", type=["csv"])
-
+print(train, test)
 if train is not None and test is not None:
+    """Ca marche?"""
     print(train, test)
 
 def code(test, train):
