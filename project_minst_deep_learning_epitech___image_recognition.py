@@ -33,6 +33,7 @@ print(tf.__version__)
 
 st.write("Select a train file")
 #filename = easygui.fileopenbox()
+filename = ""
 file = st.file_uploader("Upload a csv", type=["csv"])
 df_train = pd.read_csv(filename)
 st.write("Select a test file")
