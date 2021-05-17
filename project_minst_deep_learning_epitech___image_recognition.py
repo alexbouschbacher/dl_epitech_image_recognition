@@ -32,9 +32,9 @@ print(tf.__version__)
 """Import dataset.csv (stock not in the drive but in the local google colab environment) with their correct paths."""
 
 st.write("Select a train file")
-train = st.file_uploader("Upload a csv", type=["csv"])
+train = st.file_uploader("Upload a train csv", type=["csv"])
 st.write("Select a test file")
-test = st.file_uploader("Upload a csv", type=["csv"])
+test = st.file_uploader("Upload a test csv", type=["csv"])
 
 if train is not None and test is not None:
     print(train, test)
