@@ -117,7 +117,6 @@ if train is not None and test is not None:
         predicted_label = np.argmax(predictions_array)
         thisplot[predicted_label].set_color('red')
         thisplot[true_label].set_color('blue')
-    """We here make some function to print the image and the pourcentage of recognition we have for each."""
     i = 0
     fig = plt.figure(figsize=(6,3))
     plt.subplot(1,2,1)
@@ -134,8 +133,8 @@ if train is not None and test is not None:
     plot_value_array(i, predictions[i],  test_labels)
     st.pyplot(fig)
     #plt.show()
-    # Plot the first X test images, their predicted labels, and the true labels.
-    # Color correct predictions in blue and incorrect predictions in red.
+    """ Plot the first 15 test images, their predicted labels, and the true labels.
+    Color correct predictions in blue and incorrect predictions in red."""
     num_rows = 5
     num_cols = 3
     num_images = num_rows*num_cols
