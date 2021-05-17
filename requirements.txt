@@ -4,4 +4,4 @@ matplotlib
 tensorflow
 pandas
 easygui
-python-tk
+tk-tools
