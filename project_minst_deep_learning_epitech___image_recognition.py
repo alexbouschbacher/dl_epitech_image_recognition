@@ -38,7 +38,8 @@ test = st.file_uploader("Upload a test csv", type=["csv"])
 print(train, test)
 if train is not None and test is not None:
     """Ca marche?"""
-    print(train, test)
+    train
+    test
 
 def code(test, train):
     df_train = pd.read_csv(test)
