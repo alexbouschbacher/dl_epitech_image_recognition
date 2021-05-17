@@ -35,12 +35,9 @@ st.write("Select a train file")
 train = st.file_uploader("Upload a train csv", type=["csv"])
 st.write("Select a test file")
 test = st.file_uploader("Upload a test csv", type=["csv"])
-print(train, test)
+
 if train is not None and test is not None:
-    """Ca marche?"""
-    train
-    test
-    pd.read_csv(test['name'])
+    code(test, train)
 
 def code(test, train):
     df_train = pd.read_csv(test)
