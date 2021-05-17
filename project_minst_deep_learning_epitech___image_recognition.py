@@ -25,17 +25,18 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 import pandas as pd
 # %matplotlib inline
-import easygui
+#import easygui
 
 print(tf.__version__)
 
 """Import dataset.csv (stock not in the drive but in the local google colab environment) with their correct paths."""
 
 st.write("Select a train file")
-filename = easygui.fileopenbox()
+#filename = easygui.fileopenbox()
+file = st.file_uploader("Upload a csv", type=["csv"])
 df_train = pd.read_csv(filename)
 st.write("Select a test file")
-filename = easygui.fileopenbox()
+#filename = easygui.fileopenbox()
 df_test = pd.read_csv(filename)
 
 print(df_train)
