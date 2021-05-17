@@ -37,9 +37,6 @@ st.write("Select a test file")
 test = st.file_uploader("Upload a test csv", type=["csv"])
 
 if train is not None and test is not None:
-    code(test, train)
-
-def code(test, train):
     df_train = pd.read_csv(test)
     df_test = pd.read_csv(train)
     print(df_train)
