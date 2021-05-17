@@ -4,3 +4,5 @@ matplotlib
 tensorflow
 pandas
 easygui
+python3-tk
+python-tk
