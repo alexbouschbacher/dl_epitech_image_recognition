@@ -40,6 +40,7 @@ if train is not None and test is not None:
     """Ca marche?"""
     train
     test
+    pd.read_csv(test['name'])
 
 def code(test, train):
     df_train = pd.read_csv(test)
