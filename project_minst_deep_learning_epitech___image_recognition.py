@@ -117,7 +117,7 @@ if train is not None and test is not None:
         predicted_label = np.argmax(predictions_array)
         thisplot[predicted_label].set_color('red')
         thisplot[true_label].set_color('blue')
-        """We here make some function to print the image and the pourcentage of recognition we have for each."""
+    """We here make some function to print the image and the pourcentage of recognition we have for each."""
     i = 0
     fig = plt.figure(figsize=(6,3))
     plt.subplot(1,2,1)
